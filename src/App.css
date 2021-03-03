@@ -19,14 +19,14 @@ body {
   width: 100%;
   align-items: center;
   padding: 30px;
-  transition: 0.4s;
+  transition: 0.2s;
   z-index: 10;
 }
 
 .navbar .logo {
   font-size: 35px;
   font-weight: bold;
-  transition: 0.4s;
+  transition: 0.2s;
   color: white;
   text-decoration: none;
   margin: 0 1rem;

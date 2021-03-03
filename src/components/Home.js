@@ -17,7 +17,7 @@ class Home extends Component {
       if (myIndex > x.length) {
         myIndex = 1;
       }
-      $(x[myIndex - 1]).fadeIn();
+      $(x[myIndex - 1]).fadeIn(1000);
       setTimeout(carousel, 9000);
     }
   }

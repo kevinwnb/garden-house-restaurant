@@ -10,8 +10,8 @@ class AppNavbar extends Component {
 
     function scrollFunction() {
       if (
-        document.body.scrollTop > 80 ||
-        document.documentElement.scrollTop > 80
+        document.body.scrollTop > 1 ||
+        document.documentElement.scrollTop > 1
       ) {
         document.getElementById("navbar").style.padding = "0px";
         document.getElementById("logo").style.fontSize = "25px";
