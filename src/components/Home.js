@@ -6,11 +6,11 @@ class Home extends Component {
   componentDidMount() {
     function arrowAnimation() {
       $(".scroll-down-icon").animate(
-        { top: "+=20px", opacity: "1" },
+        { top: "+=10px", opacity: "1" },
         500,
         function () {
           $(".scroll-down-icon").animate(
-            { top: "-=20px", opacity: "0" },
+            { top: "-=10px", opacity: "0" },
             500,
             function () {
               arrowAnimation();
