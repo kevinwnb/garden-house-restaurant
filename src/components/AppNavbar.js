@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { Navbar, NavbarBrand, NavItem, NavLink } from "reactstrap";
+import { Link } from "react-router-dom";
 
 class AppNavbar extends Component {
   componentDidMount() {
@@ -27,20 +28,17 @@ class AppNavbar extends Component {
   }
   render() {
     return (
-      <nav id="navbar" className={`navbar`}>
+      <nav id="navbar" className={`_navbar`}>
         <a href="#default" id="logo" className={"logo"}>
           Garden House
         </a>
         <div className={"menu-items"}>
-          <a className={"link"} href="javascript:void(0)">
-            One
-          </a>
-          <a className={"link"} href="javascript:void(0)">
-            Two
-          </a>
-          <a className={"link"} href="javascript:void(0)">
-            Three
-          </a>
+          <Link to="/" className="link">
+            Home
+          </Link>
+          <Link to="/weeklyspecials" className="link">
+            Weekly Specials
+          </Link>
         </div>
       </nav>
     );

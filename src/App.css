@@ -14,7 +14,7 @@ body {
   overflow-x: hidden;
 }
 
-.navbar {
+._navbar {
   background-color: rgba(50, 205, 50, 0.6);
   position: fixed;
   display: flex;
@@ -25,7 +25,7 @@ body {
   z-index: 10;
 }
 
-.navbar .logo {
+._navbar .logo {
   font-size: 35px;
   font-weight: bold;
   transition: 0.2s;
@@ -41,7 +41,7 @@ body {
   margin-right: 1rem;
 }
 
-.navbar .link {
+._navbar .link {
   color: white;
   text-decoration: none;
   display: block;
