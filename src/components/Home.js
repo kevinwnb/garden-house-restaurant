@@ -46,53 +46,64 @@ class Home extends Component {
             We hope to see you again! Check back later for new updates to our
             website. There is much more to come!
           </p>
-          <Row>
-            <Col md="4">
-              <div className={"text-center"}>
-                <img
-                  src={
-                    "https://mediaprocessor.websimages.com/width/262/crop/0,0,262x195/staticthumbs3.freewebs.com.s3-website-us-east-1.amazonaws.com/THUMBS/30/ed/30ede8f611b67226c5ff8bfab2157bb8.JPG"
-                  }
-                />
-              </div>
-              <h4>Chicken Sizzler</h4>
-              <p className={"text"}>
-                Tender pieces of boneless chicken breast sauteed with fresh
-                vegetables served with rice pilaf, with a hint of lemon and a
-                fresh homemade dinner roll
-              </p>
-            </Col>
-            <Col md="4">
-              <div className={"text-center"}>
-                <img
-                  src={
-                    "https://mediaprocessor.websimages.com/width/262/crop/0,5,262x195/staticthumbs3.freewebs.com.s3-website-us-east-1.amazonaws.com/THUMBS/c4/c0/c4c09312dce4c24389b43781229d4717.JPG"
-                  }
-                />
-              </div>
-              <h4>Fish Chowder</h4>
-              <p className={"text"}>
-                A rich cream based chowder with fresh chunks of haddock, served
-                with a fresh homemade dinner roll
-              </p>
-            </Col>
-            <Col md="4">
-              <div className={"text-center"}>
-                <img
-                  src={
-                    "https://mediaprocessor.websimages.com/width/262/crop/0,0,262x195/staticthumbs3.freewebs.com.s3-website-us-east-1.amazonaws.com/THUMBS/30/ed/30ede8f611b67226c5ff8bfab2157bb8.JPG"
-                  }
-                />
-              </div>
-              <h4>Chicken Sizzler</h4>
-              <p className={"text"}>
-                Tender pieces of boneless chicken breast sauteed with fresh
-                vegetables served with rice pilaf, with a hint of lemon and a
-                fresh homemade dinner roll
-              </p>
-            </Col>
-          </Row>
         </Container>
+
+        <div className={"pre-popular-menu-items"}>
+          <Container>
+            <Row className={"popular-menu-items justify-content-center"}>
+              <Col md="4">
+                <div className={"mx-auto mx-md-3"}>
+                  <div className={"text-center"}>
+                    <img
+                      src={
+                        "https://mediaprocessor.websimages.com/width/262/crop/0,0,262x195/staticthumbs3.freewebs.com.s3-website-us-east-1.amazonaws.com/THUMBS/30/ed/30ede8f611b67226c5ff8bfab2157bb8.JPG"
+                      }
+                    />
+                  </div>
+                  <h4>Chicken Sizzler</h4>
+                  <p className={"text"}>
+                    Tender pieces of boneless chicken breast sauteed with fresh
+                    vegetables served with rice pilaf, with a hint of lemon and
+                    a fresh homemade dinner roll
+                  </p>
+                </div>
+              </Col>
+              <Col md="4">
+                <div className={"mx-auto mx-md-3"}>
+                  <div className={"text-center"}>
+                    <img
+                      src={
+                        "https://mediaprocessor.websimages.com/width/262/crop/0,5,262x195/staticthumbs3.freewebs.com.s3-website-us-east-1.amazonaws.com/THUMBS/c4/c0/c4c09312dce4c24389b43781229d4717.JPG"
+                      }
+                    />
+                  </div>
+                  <h4>Fish Chowder</h4>
+                  <p className={"text"}>
+                    A rich cream based chowder with fresh chunks of haddock,
+                    served with a fresh homemade dinner roll
+                  </p>
+                </div>
+              </Col>
+              <Col md="4">
+                <div className={"mx-auto mx-md-3"}>
+                  <div className={"text-center"}>
+                    <img
+                      src={
+                        "https://mediaprocessor.websimages.com/width/262/crop/0,0,262x195/staticthumbs3.freewebs.com.s3-website-us-east-1.amazonaws.com/THUMBS/30/ed/30ede8f611b67226c5ff8bfab2157bb8.JPG"
+                      }
+                    />
+                  </div>
+                  <h4>Chicken Sizzler</h4>
+                  <p className={"text"}>
+                    Tender pieces of boneless chicken breast sauteed with fresh
+                    vegetables served with rice pilaf, with a hint of lemon and
+                    a fresh homemade dinner roll
+                  </p>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </div>
       </Fragment>
     );
   }

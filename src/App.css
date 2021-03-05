@@ -76,3 +76,24 @@ body {
 .text {
   font-size: larger;
 }
+
+.pre-popular-menu-items {
+  background-color: rgba(85, 107, 47, 0.9);
+  padding: 3rem 0;
+}
+
+.popular-menu-items div div img {
+  max-width: 100%;
+}
+
+.popular-menu-items > div > div {
+  background-color: darkolivegreen;
+  border-radius: 15px;
+  height: 100%;
+  padding: 1rem;
+  max-width: 18rem;
+}
+
+.popular-menu-items > div > div p {
+  color: rgba(255, 255, 255, 0.5);
+}
