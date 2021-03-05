@@ -80,6 +80,7 @@ body {
 
 .pre-popular-menu-items {
   background-color: rgba(85, 107, 47, 0.9);
+  background: linear-gradient(rgba(85, 107, 47, 0.9), rgba(85, 107, 47, 0.5));
   padding: 3rem 0;
 }
 
