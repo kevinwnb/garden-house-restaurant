@@ -50,6 +50,7 @@ class Home extends Component {
 
         <div className={"pre-popular-menu-items"}>
           <Container>
+            <h3>Some of our more popular menu items...</h3>
             <Row className={"popular-menu-items justify-content-center"}>
               <Col md="4">
                 <div className={"mx-auto mx-md-3"}>

@@ -15,7 +15,7 @@ body {
 }
 
 ._navbar {
-  background-color: rgba(50, 205, 50, 0.6);
+  background-color: rgba(85, 107, 47, 0.9);
   position: fixed;
   display: flex;
   width: 100%;
@@ -64,6 +64,7 @@ body {
   text-shadow: -1px -1px 0px black;
   font-family: DancingScript;
   font-size: 50pt;
+  text-align: center;
 }
 
 .scroll-down-icon {
@@ -80,6 +81,13 @@ body {
 .pre-popular-menu-items {
   background-color: rgba(85, 107, 47, 0.9);
   padding: 3rem 0;
+}
+
+.pre-popular-menu-items h3 {
+  font-family: DancingScript;
+  color: white;
+  margin-bottom: 3rem;
+  text-align: center;
 }
 
 .popular-menu-items div div img {

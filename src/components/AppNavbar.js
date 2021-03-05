@@ -11,17 +11,17 @@ class AppNavbar extends Component {
 
     function scrollFunction() {
       if (
-        document.body.scrollTop > 1 ||
-        document.documentElement.scrollTop > 1
+        document.body.scrollTop > 80 ||
+        document.documentElement.scrollTop > 80
       ) {
         document.getElementById("navbar").style.padding = "0px";
         document.getElementById("logo").style.fontSize = "25px";
         document.getElementById("navbar").style.backgroundColor =
-          "rgba(50,205,50,1)";
+          "rgba(85, 107, 47, 1)";
       } else {
         document.getElementById("navbar").style.padding = "30px";
         document.getElementById("navbar").style.backgroundColor =
-          "rgba(50,205,50,0.6)";
+          "rgba(85, 107, 47, 0.7)";
         document.getElementById("logo").style.fontSize = "35px";
       }
     }
