@@ -96,7 +96,8 @@ body {
 }
 
 .popular-menu-items > div > div {
-  background-color: darkolivegreen;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 15px;
   height: 100%;
   padding: 1rem;
@@ -104,5 +105,5 @@ body {
 }
 
 .popular-menu-items > div > div p {
-  color: rgba(255, 255, 255, 0.5);
+  color: black;
 }
