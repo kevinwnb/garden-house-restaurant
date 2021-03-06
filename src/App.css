@@ -42,10 +42,18 @@ body {
 }
 
 ._navbar .link {
-  color: white;
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   display: block;
-  padding: 1rem 0.25rem;
+  padding: 0.5rem 0.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  margin: 0.5rem;
+  transition: 0.2s;
+}
+
+._navbar .link:hover {
+  color: white;
+  border: 1px solid white;
 }
 
 .background {
