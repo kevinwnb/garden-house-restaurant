@@ -1,6 +1,7 @@
 import { Component, Fragment } from "react";
 import { Navbar, NavbarBrand, NavItem, NavLink } from "reactstrap";
 import { Link } from "react-router-dom";
+import $ from "jquery";
 
 class AppNavbar extends Component {
   componentDidMount() {
@@ -29,15 +30,25 @@ class AppNavbar extends Component {
 
   openNav() {
     document.getElementById("mySidenav").style.right = "0px";
+    $(".absoluter").fadeIn();
+    document.querySelector("html, body").style.overflowY = "hidden";
   }
 
   closeNav() {
     document.getElementById("mySidenav").style.right = "-300px";
+    $(".absoluter").fadeOut();
+    document.querySelector("html, body").style.overflowY = "visible";
   }
 
   render() {
     return (
       <Fragment>
+        <div
+          className={"absoluter"}
+          onClick={() => {
+            this.closeNav();
+          }}
+        ></div>
         <div id="mySidenav" className={"sidenav"}>
           <a
             href={"javascript:void(0)"}
