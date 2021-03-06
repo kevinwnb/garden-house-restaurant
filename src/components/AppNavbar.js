@@ -1,4 +1,4 @@
-import { Component } from "react";
+import { Component, Fragment } from "react";
 import { Navbar, NavbarBrand, NavItem, NavLink } from "reactstrap";
 import { Link } from "react-router-dom";
 
@@ -19,28 +19,72 @@ class AppNavbar extends Component {
         document.getElementById("navbar").style.backgroundColor =
           "rgba(85, 107, 47, 1)";
       } else {
-        document.getElementById("navbar").style.padding = "30px";
+        document.getElementById("navbar").style.padding = "20px";
         document.getElementById("navbar").style.backgroundColor =
           "rgba(85, 107, 47, 0.7)";
         document.getElementById("logo").style.fontSize = "35px";
       }
     }
   }
+
+  openNav() {
+    document.getElementById("mySidenav").style.right = "0px";
+  }
+
+  closeNav() {
+    document.getElementById("mySidenav").style.right = "-300px";
+  }
+
   render() {
     return (
-      <nav id="navbar" className={`_navbar`}>
-        <a href="#default" id="logo" className={"logo"}>
-          Garden House
-        </a>
-        <div className={"menu-items"}>
-          <Link to="/" className="link">
-            Home
-          </Link>
+      <Fragment>
+        <div id="mySidenav" className={"sidenav"}>
+          <a
+            href={"javascript:void(0)"}
+            className={"closebtn"}
+            onClick={() => {
+              this.closeNav();
+            }}
+          >
+            &times;
+          </a>
+
           <Link to="/weeklyspecials" className="link">
             Weekly Specials
           </Link>
+          <Link to="/weeklyspecials" className="link">
+            Our Menus
+          </Link>
+          <Link to="/weeklyspecials" className="link">
+            About
+          </Link>
+          <Link to="/weeklyspecials" className="link">
+            Facts
+          </Link>
+          <Link to="/weeklyspecials" className="link">
+            Gallery
+          </Link>
+          <Link to="/weeklyspecials" className="link">
+            Contact
+          </Link>
         </div>
-      </nav>
+        <nav id="navbar" className={`_navbar`}>
+          <a href="#default" id="logo" className={"logo"}>
+            Garden House
+          </a>
+          <div className={"menu-items"}>
+            <Link
+              to="/"
+              className="link"
+              onClick={() => {
+                this.openNav();
+              }}
+            >
+              <i className={"menu-icon fas fa-bars"}></i>
+            </Link>
+          </div>
+        </nav>
+      </Fragment>
     );
   }
 }

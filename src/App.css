@@ -20,7 +20,7 @@ body {
   display: flex;
   width: 100%;
   align-items: center;
-  padding: 30px;
+  padding: 20px;
   transition: 0.2s;
   z-index: 10;
 }
@@ -46,14 +46,45 @@ body {
   text-decoration: none;
   display: block;
   padding: 0.5rem 0.25rem;
-  border: 1px solid rgba(255, 255, 255, 0.8);
   margin: 0.5rem;
   transition: 0.2s;
 }
 
+._navbar .menu-icon {
+  font-size: 2.5rem;
+}
+
 ._navbar .link:hover {
   color: white;
-  border: 1px solid white;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 300px; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 11; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
 }
 
 .background {
