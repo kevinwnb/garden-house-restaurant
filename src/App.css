@@ -22,12 +22,12 @@ body {
   align-items: center;
   z-index: 10;
   padding: 0;
+  transition: 0.2s;
 }
 
 ._navbar.home {
   background-color: rgba(85, 107, 47, 0.9);
   padding: 20px;
-  transition: 0.2s;
 }
 
 ._navbar .logo {
