@@ -11,19 +11,21 @@ class AppNavbar extends Component {
     };
 
     function scrollFunction() {
-      if (
-        document.body.scrollTop > 80 ||
-        document.documentElement.scrollTop > 80
-      ) {
-        document.getElementById("navbar").style.padding = "0px";
-        document.getElementById("logo").style.fontSize = "25px";
-        document.getElementById("navbar").style.backgroundColor =
-          "rgba(85, 107, 47, 1)";
-      } else {
-        document.getElementById("navbar").style.padding = "20px";
-        document.getElementById("navbar").style.backgroundColor =
-          "rgba(85, 107, 47, 0.7)";
-        document.getElementById("logo").style.fontSize = "35px";
+      if (document.querySelector("._navbar").classList.contains("home")) {
+        if (
+          document.body.scrollTop > 80 ||
+          document.documentElement.scrollTop > 80
+        ) {
+          document.getElementById("navbar").style.padding = "0px";
+          document.getElementById("logo").style.fontSize = "25px";
+          document.getElementById("navbar").style.backgroundColor =
+            "rgba(85, 107, 47, 1)";
+        } else {
+          document.getElementById("navbar").style.padding = "20px";
+          document.getElementById("navbar").style.backgroundColor =
+            "rgba(85, 107, 47, 0.7)";
+          document.getElementById("logo").style.fontSize = "35px";
+        }
       }
     }
   }

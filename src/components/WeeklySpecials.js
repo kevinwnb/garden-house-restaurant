@@ -8,7 +8,7 @@ class WeeklySpecials extends Component {
       <Fragment>
         <section id={"weeklyspecials"}>
           <h1>Weekly Specials</h1>
-          <div style={{ height: "600px" }}></div>
+          <div style={{ height: "1000px" }}></div>
         </section>
       </Fragment>
     );

@@ -4,7 +4,22 @@ import $ from "jquery";
 import { Col, Container, Row } from "reactstrap";
 
 class Home extends Component {
+  componentWillUnmount() {
+    document.querySelector("._navbar").classList.remove("home");
+    document.getElementById("navbar").style.padding = "0px";
+    document.getElementById("logo").style.fontSize = "25px";
+    document.getElementById("navbar").style.backgroundColor =
+      "rgba(85, 107, 47, 1)";
+  }
+
   componentDidMount() {
+    document.querySelector("._navbar").classList.add("home");
+    document.getElementById("navbar").style.padding = "20px";
+    document.getElementById("navbar").style.backgroundColor =
+      "rgba(85, 107, 47, 0.7)";
+    document.getElementById("logo").style.fontSize = "35px";
+
+    document.querySelector("._navbar").style.position = "fixed";
     function arrowAnimation() {
       $(".scroll-down-icon").animate(
         { top: "+=10px", opacity: "1" },

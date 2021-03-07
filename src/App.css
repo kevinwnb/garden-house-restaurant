@@ -15,14 +15,19 @@ body {
 }
 
 ._navbar {
-  background-color: rgba(85, 107, 47, 0.9);
+  background-color: rgba(85, 107, 47, 1);
   position: fixed;
   display: flex;
   width: 100%;
   align-items: center;
+  z-index: 10;
+  padding: 0;
+}
+
+._navbar.home {
+  background-color: rgba(85, 107, 47, 0.9);
   padding: 20px;
   transition: 0.2s;
-  z-index: 10;
 }
 
 ._navbar .logo {
