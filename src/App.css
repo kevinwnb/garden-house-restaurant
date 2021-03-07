@@ -162,3 +162,9 @@ body {
 .popular-menu-items > div > div p {
   color: black;
 }
+
+#weeklyspecials h1 {
+  text-align: center;
+  position: relative;
+  top: calc(73px + 3rem);
+}
