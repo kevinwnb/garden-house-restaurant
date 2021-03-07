@@ -7,11 +7,8 @@ class WeeklySpecials extends Component {
     return (
       <Fragment>
         <section id={"weeklyspecials"}>
-          <div className={`background`}>
-            <h1>Weekly Specials</h1>
-            <i class="scroll-down-icon fas fa-angle-down"></i>
-          </div>
-          <div style={{ height: "600px", backgroundColor: "black" }}></div>
+          <h1>Weekly Specials</h1>
+          <div style={{ height: "600px" }}></div>
         </section>
       </Fragment>
     );
