@@ -6,14 +6,17 @@ import { Fragment } from "react";
 import AppNavbar from "./components/AppNavbar";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import WeeklySpecials from "./components/WeeklySpecials";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Fragment>
       <Router>
-        <AppNavbar />
-        <Route path="/" exact component={Home} />
-        <Route path="/weeklyspecials" exact component={WeeklySpecials} />
+        <ScrollToTop>
+          <AppNavbar />
+          <Route path="/" exact component={Home} />
+          <Route path="/weeklyspecials" exact component={WeeklySpecials} />
+        </ScrollToTop>
       </Router>
     </Fragment>
   );

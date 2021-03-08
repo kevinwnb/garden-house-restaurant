@@ -89,6 +89,9 @@ class AppNavbar extends Component {
             &times;
           </a>
 
+          <Link to="/" className="link">
+            Home
+          </Link>
           <Link to="/weeklyspecials" className="link">
             Weekly Specials
           </Link>
@@ -113,15 +116,15 @@ class AppNavbar extends Component {
             Garden House
           </a>
           <div className={"menu-items"}>
-            <Link
-              to="/"
-              className="link"
+            <a
+              href={"javascript:void(0)"}
+              className={"link"}
               onClick={() => {
                 this.openNav();
               }}
             >
               <i className={"menu-icon fas fa-bars"}></i>
-            </Link>
+            </a>
           </div>
         </nav>
       </Fragment>

@@ -15,7 +15,7 @@ body {
 }
 
 ._navbar {
-  background-color: rgba(17, 159, 88, 1);
+  background-color: rgba(17, 159, 88, 0.9);
   position: fixed;
   display: flex;
   width: 100%;
@@ -134,7 +134,7 @@ body {
 
 .pre-popular-menu-items {
   background-color: rgba(85, 107, 47, 0.9);
-  background: linear-gradient(rgba(85, 107, 47, 0.9), rgba(85, 107, 47, 0.5));
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(85, 107, 47, 0.5));
   padding: 3rem 0;
 }
 
@@ -167,5 +167,10 @@ body {
 #weeklyspecials h1 {
   text-align: center;
   position: relative;
+  font-family: DancingScript;
   top: calc(73px + 3rem);
+}
+
+#home h3 {
+  font-family: DancingScript;
 }
