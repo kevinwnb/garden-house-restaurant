@@ -2,6 +2,9 @@ import { Component, Fragment } from "react";
 import image from "../assets/images/IMG_6243-1.jpg";
 import $ from "jquery";
 import { Col, Container, Row } from "reactstrap";
+import simpleParallax from "simple-parallax-js";
+import image1 from "../assets/images/IMG_6243-1.jpg";
+import Parallax from "scroll-parallax";
 
 class Home extends Component {
   componentWillUnmount() {
@@ -18,6 +21,8 @@ class Home extends Component {
     // document.getElementById("navbar").style.backgroundColor =
     //   "rgba(85, 107, 47, 0.7)";
     // document.getElementById("logo").style.fontSize = "35px";
+
+    var p = new Parallax(".parallax-1", { intensity: 70 }).init();
 
     document.querySelector("._navbar").style.position = "fixed";
     function arrowAnimation() {
@@ -41,12 +46,22 @@ class Home extends Component {
     return (
       <Fragment>
         <section id={"home"}>
-          <div className={`background`}>
-            <h1>Garden House Restaurant</h1>
+          <h1>Garden House Restaurant</h1>
+          <div style={{ display: "none" }} className={`background`}>
             <i className={"scroll-down-icon fas fa-angle-down"}></i>
           </div>
-          <Container className={"mt-5"}>
-            <h3>Welcome to the Garden House Restaurant!</h3>
+          <figure
+            style={{
+              marginTop: "3rem",
+              position: "relative",
+              overflow: "hidden",
+              height: "50vh",
+            }}
+          >
+            <img className={"parallax-1"} src={image1} />
+          </figure>
+          <Container className={"my-5"}>
+            <h2>Welcome to the Garden House Restaurant!</h2>
             <p className={"text"}>
               The Garden House Restaurant & Catering is focused on providing
               high-quality service and customer satisfaction - we will strive to
@@ -106,15 +121,15 @@ class Home extends Component {
                     <div className={"text-center"}>
                       <img
                         src={
-                          "https://mediaprocessor.websimages.com/width/262/crop/0,0,262x195/staticthumbs3.freewebs.com.s3-website-us-east-1.amazonaws.com/THUMBS/30/ed/30ede8f611b67226c5ff8bfab2157bb8.JPG"
+                          "https://mediaprocessor.websimages.com/width/262/crop/0,0,262x195/staticthumbs3.freewebs.com.s3-website-us-east-1.amazonaws.com/THUMBS/45/b4/45b4b61ff04764e6abcbcc474e303473.JPG"
                         }
                       />
                     </div>
-                    <h4>Chicken Sizzler</h4>
+                    <h4>Fish & Chips</h4>
                     <p className={"text"}>
-                      Tender pieces of boneless chicken breast sauteed with
-                      fresh vegetables served with rice pilaf, with a hint of
-                      lemon and a fresh homemade dinner roll
+                      Freshly battered haddock atop our popular hand-cut fries
+                      with sides of our creamy coleslaw and secret recipe tartar
+                      sauce
                     </p>
                   </div>
                 </Col>
