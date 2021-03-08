@@ -46,11 +46,12 @@ class Home extends Component {
       <Fragment>
         <section id={"home"}>
           <h1>Garden House Restaurant</h1>
-          <div style={{ display: "none" }} className={`background`}>
+          <div className={`background`}>
             <i className={"scroll-down-icon fas fa-angle-down"}></i>
           </div>
           <figure
             style={{
+              display: "none",
               marginTop: "3rem",
               position: "relative",
               overflow: "hidden",
@@ -61,7 +62,7 @@ class Home extends Component {
           </figure>
           <Container className={"my-5"}>
             <h2>Welcome to the Garden House Restaurant!</h2>
-            <p className={"text"}>
+            <p className={"text mt-5"}>
               The Garden House Restaurant & Catering is focused on providing
               high-quality service and customer satisfaction - we will strive to
               exceed your expectations.
@@ -136,6 +137,9 @@ class Home extends Component {
             </Container>
           </div>
 
+          <h3 className={"my-5 text-center"} style={{ fontFamily: "verdana" }}>
+            Our location
+          </h3>
           <iframe
             width={"600"}
             height={"450"}
@@ -143,6 +147,7 @@ class Home extends Component {
               border: "0",
               marginLeft: "50%",
               transform: "translateX(-50%)",
+              marginBottom: "3rem",
             }}
             loading={"lazy"}
             allowfullscreen

@@ -55,10 +55,12 @@ class AppNavbar extends Component {
     document.getElementById("mySidenav").style.right = "0px";
     $(".absoluter").fadeIn();
     document.querySelector("html, body").style.overflowY = "hidden";
-    document.querySelector("html, body").style.paddingRight =
-      this.getScrollbarWidth() + "px";
-    document.querySelector("._navbar .menu-items").style.paddingRight =
-      this.getScrollbarWidth() + "px";
+    if ($(document).height() > $(window).height()) {
+      document.querySelector("html, body").style.paddingRight =
+        this.getScrollbarWidth() + "px";
+      document.querySelector("._navbar .menu-items").style.paddingRight =
+        this.getScrollbarWidth() + "px";
+    }
   }
 
   closeNav() {
@@ -89,25 +91,67 @@ class AppNavbar extends Component {
             &times;
           </a>
 
-          <Link to="/" className="link">
+          <Link
+            onClick={() => {
+              this.closeNav();
+            }}
+            to="/"
+            className="link"
+          >
             Home
           </Link>
-          <Link to="/weeklyspecials" className="link">
+          <Link
+            onClick={() => {
+              this.closeNav();
+            }}
+            to="/weeklyspecials"
+            className="link"
+          >
             Weekly Specials
           </Link>
-          <Link to="/weeklyspecials" className="link">
+          <Link
+            onClick={() => {
+              this.closeNav();
+            }}
+            to="/weeklyspecials"
+            className="link"
+          >
             Our Menus
           </Link>
-          <Link to="/weeklyspecials" className="link">
+          <Link
+            onClick={() => {
+              this.closeNav();
+            }}
+            to="/weeklyspecials"
+            className="link"
+          >
             About
           </Link>
-          <Link to="/weeklyspecials" className="link">
+          <Link
+            onClick={() => {
+              this.closeNav();
+            }}
+            to="/weeklyspecials"
+            className="link"
+          >
             Facts
           </Link>
-          <Link to="/weeklyspecials" className="link">
+          <Link
+            onClick={() => {
+              this.closeNav();
+            }}
+            to="/weeklyspecials"
+            className="link"
+          >
             Gallery
           </Link>
-          <Link to="/weeklyspecials" className="link">
+          <Link
+            onClick={() => {
+              this.closeNav();
+            }}
+            to="/weeklyspecials"
+            className="link"
+          >
             Contact
           </Link>
         </div>
