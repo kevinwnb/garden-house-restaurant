@@ -30,13 +30,40 @@ class AppNavbar extends Component {
     }
   }
 
+  getScrollbarWidth() {
+    // Creating invisible container
+    const outer = document.createElement("div");
+    outer.style.visibility = "hidden";
+    outer.style.overflow = "scroll"; // forcing scrollbar to appear
+    outer.style.msOverflowStyle = "scrollbar"; // needed for WinJS apps
+    document.body.appendChild(outer);
+
+    // Creating inner element and placing it in the container
+    const inner = document.createElement("div");
+    outer.appendChild(inner);
+
+    // Calculating difference between container's full width and the child width
+    const scrollbarWidth = outer.offsetWidth - inner.offsetWidth;
+
+    // Removing temporary elements from the DOM
+    outer.parentNode.removeChild(outer);
+
+    return scrollbarWidth;
+  }
+
   openNav() {
     document.getElementById("mySidenav").style.right = "0px";
     $(".absoluter").fadeIn();
     document.querySelector("html, body").style.overflowY = "hidden";
+    document.querySelector("html, body").style.paddingRight =
+      this.getScrollbarWidth() + "px";
+    document.querySelector("._navbar .menu-items").style.paddingRight =
+      this.getScrollbarWidth() + "px";
   }
 
   closeNav() {
+    document.querySelector("._navbar .menu-items").style.paddingRight = "0px";
+    document.querySelector("html, body").style.paddingRight = "0px";
     document.getElementById("mySidenav").style.right = "-300px";
     $(".absoluter").fadeOut();
     document.querySelector("html, body").style.overflowY = "visible";
