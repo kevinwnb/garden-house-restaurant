@@ -2,7 +2,6 @@ import { Component, Fragment } from "react";
 import image from "../assets/images/IMG_6243-1.jpg";
 import $ from "jquery";
 import { Col, Container, Row } from "reactstrap";
-import simpleParallax from "simple-parallax-js";
 import image1 from "../assets/images/IMG_6243-1.jpg";
 import Parallax from "scroll-parallax";
 
@@ -136,6 +135,21 @@ class Home extends Component {
               </Row>
             </Container>
           </div>
+
+          <iframe
+            width={"600"}
+            height={"450"}
+            style={{
+              border: "0",
+              marginLeft: "50%",
+              transform: "translateX(-50%)",
+            }}
+            loading={"lazy"}
+            allowfullscreen
+            src={
+              "https://www.google.com/maps/embed/v1/place?key=AIzaSyDlmJnX8wChkbasK3b7UewLevLJa2L2l2s&q=The+Garden+House,Moncton+NB"
+            }
+          ></iframe>
         </section>
       </Fragment>
     );
