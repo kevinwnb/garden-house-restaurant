@@ -7,6 +7,7 @@ import AppNavbar from "./components/AppNavbar";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import WeeklySpecials from "./components/WeeklySpecials";
 import ScrollToTop from "./components/ScrollToTop";
+import Menus from "./components/Menus";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <AppNavbar />
           <Route path="/" exact component={Home} />
           <Route path="/weeklyspecials" exact component={WeeklySpecials} />
+          <Route path="/menus" exact component={Menus} />
         </ScrollToTop>
       </Router>
     </Fragment>

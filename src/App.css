@@ -205,3 +205,10 @@ table {
   color: #0099ff;
   font-size: 2rem;
 }
+
+#menus h1:first-of-type {
+  padding-top: calc(73px + 3rem);
+  padding-bottom: 3rem;
+  text-align: center;
+  font-family: DancingScript;
+}

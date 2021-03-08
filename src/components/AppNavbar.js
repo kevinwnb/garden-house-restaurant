@@ -113,7 +113,7 @@ class AppNavbar extends Component {
             onClick={() => {
               this.closeNav();
             }}
-            to="/weeklyspecials"
+            to="/menus"
             className="link"
           >
             Our Menus

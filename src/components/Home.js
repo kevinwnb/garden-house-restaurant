@@ -138,7 +138,7 @@ class Home extends Component {
           </div>
 
           <h3 className={"my-5 text-center"} style={{ fontFamily: "verdana" }}>
-            Our location
+            Location
           </h3>
           <iframe
             width={"600"}
