@@ -20,6 +20,16 @@ class WeeklySpecials extends Component {
               </p>
               <p className={"ml-auto"}>$9.99</p>
             </div>
+            <h4 className={"w-100"}>
+              BREAKFAST Traditional Garden House Breakfast:
+            </h4>
+            <div className={"d-flex"}>
+              <p>
+                2 eggs any style, choice of bacon or sausage, panfries &
+                homemade toasted bread 8am-11am
+              </p>
+              <p className={"ml-auto"}>$9.99</p>
+            </div>
           </Container>
         </section>
       </Fragment>

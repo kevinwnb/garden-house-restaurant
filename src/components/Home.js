@@ -141,9 +141,10 @@ class Home extends Component {
             Location
           </h3>
           <iframe
-            width={"600"}
+            width={"100%"}
             height={"450"}
             style={{
+              maxWidth: "600px",
               border: "0",
               marginLeft: "50%",
               transform: "translateX(-50%)",
