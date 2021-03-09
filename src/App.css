@@ -199,6 +199,7 @@ table {
   background-color: lightblue;
   border-left: 3px solid #0099ff;
   padding: 1rem;
+  padding-left: 0;
 }
 
 .info .fa-info-circle {
