@@ -213,3 +213,36 @@ table {
   text-align: center;
   font-family: DancingScript;
 }
+
+#menus .nav {
+  padding: 1rem;
+  background-color: #3c3c3c;
+  display: inline-flex;
+}
+
+#menus .nav a {
+  color: #c0c0c0;
+  padding: 0.5rem;
+}
+
+#menus .nav a:hover {
+  text-decoration: none;
+}
+
+#menus .nav a.active {
+  color: dimgrey;
+  background-color: white;
+  border-radius: 1000px;
+}
+
+#menus .content {
+  background-color: #3c3c3c;
+  padding: 3rem;
+}
+
+#menus .content .item {
+  background-color: #c0c0c0;
+  padding: 1rem;
+  margin: 1rem 0;
+  color: black;
+}
