@@ -60,6 +60,15 @@ class WeeklySpecials extends Component {
                   <p className={"ml-auto"}>$12.99</p>
                 </div>
               </div>
+              <div className={"item"}>
+                <h4 className={"w-100"}>
+                  Fresh Vegetable & Cheddar Cheese Omelette:
+                </h4>
+                <div className={"d-flex"}>
+                  <p>with panfries & homemade toasted bread</p>
+                  <p className={"ml-auto"}>$10.99</p>
+                </div>
+              </div>
             </div>
           </Container>
         </section>
