@@ -69,6 +69,46 @@ class WeeklySpecials extends Component {
                   <p className={"ml-auto"}>$10.99</p>
                 </div>
               </div>
+              <div className={"item"}>
+                <h4 className={"w-100"}>
+                  Toasted Western & Cheddar Cheese Sandwich:
+                </h4>
+                <div className={"d-flex"}>
+                  <p>with panfries</p>
+                  <p className={"ml-auto"}>$9.49</p>
+                </div>
+              </div>
+              <div className={"item"}>
+                <h4 className={"w-100"}>
+                  Garden House Breakfast Bagel Deluxe:
+                </h4>
+                <div className={"d-flex"}>
+                  <p>Bacon, fried egg & cheddar cheese</p>
+                  <div className={"ml-auto"}>
+                    <p className={"d-block"}>$4.99</p>
+                    <p className={"d-block"}>w/panfries $6.99</p>
+                  </div>
+                </div>
+              </div>
+              <div className={"item"}>
+                <h4 className={"w-100"}>Fresh Whole Wheat Breakfast Wrap:</h4>
+                <div className={"d-flex"}>
+                  <p>
+                    Scrambled egg, panfries, cheese & bacon in a whole wheat
+                    tortilla wrap
+                  </p>
+                  <p className={"ml-auto"}>$5.99</p>
+                </div>
+              </div>
+              <div className={"item"}>
+                <h4 className={"w-100"}>
+                  Old Fashioned Oatmeal with Brown Sugar:
+                </h4>
+                <div className={"d-flex"}>
+                  <p>and homemade toasted bread</p>
+                  <p className={"ml-auto"}>$6.49</p>
+                </div>
+              </div>
             </div>
           </Container>
         </section>
