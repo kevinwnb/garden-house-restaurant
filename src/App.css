@@ -238,8 +238,8 @@ table {
 }
 
 #menus .nav a.active {
-  color: dimgrey;
-  background-color: white;
+  color: white;
+  background-color: rgba(17, 159, 88, 1);
   border-radius: 1000px;
 }
 
@@ -249,8 +249,23 @@ table {
 }
 
 #menus .content .item {
-  background-color: #c0c0c0;
+  background-color: transparent;
   padding: 1rem;
   margin: 1rem 0;
-  color: black;
+  color: white;
+  border-bottom: 1px dashed white;
+}
+
+#menus .content .item div.d-flex {
+  align-items: center;
+}
+
+#menus .content .item div.d-flex p.ml-auto,
+#menus .content .item div.d-flex p.d-block {
+  padding: 0.5rem;
+  background-color: transparent;
+  border-radius: 5px;
+  color: white;
+  margin-left: 1rem;
+  font-weight: bolder;
 }
