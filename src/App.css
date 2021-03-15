@@ -238,8 +238,8 @@ table {
 }
 
 #menus .nav a.active {
-  color: white;
-  background-color: rgba(17, 159, 88, 1);
+  color: black;
+  background-color: white;
   border-radius: 1000px;
 }
 
@@ -268,4 +268,31 @@ table {
   color: white;
   margin-left: 1rem;
   font-weight: bolder;
+}
+
+#menuscatering .nav {
+  padding: 1rem;
+  background-color: #3c3c3c;
+  display: inline-flex;
+  justify-content: center;
+}
+
+#menuscatering .nav a {
+  color: rgba(17, 159, 88, 1);
+  padding: 0.5rem;
+  border: 2px solid rgba(17, 159, 88, 1);
+  margin: 0.25rem;
+  transition: 0.2s;
+}
+
+#menuscatering .nav a:hover {
+  text-decoration: none;
+  background-color: rgba(17, 159, 88, 1);
+  color: white;
+}
+
+#menuscatering .nav a.active {
+  color: white;
+  background-color: rgba(17, 159, 88, 1);
+  border-radius: 0;
 }
